@@ -29,7 +29,7 @@ def post_query():
     return query_set
 
 
-def category_query(): 
+def category_query():
     """Вернуть результат запроса к таблице blog_category."""
     query_set = Category.objects.filter(is_published=True)
     return query_set
