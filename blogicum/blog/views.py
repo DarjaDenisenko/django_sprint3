@@ -34,7 +34,7 @@ def category_posts(request, category_slug):
     post_list = (
         post_query()
         .filter(category__slug=category_slug)
-        .order_by("-pub_date")[:LIMIT+5]
+        .order_by("-pub_date")[:LIMIT + 5]
     )
     context = {"category": category, "post_list": post_list}
     return render(request, template, context)
