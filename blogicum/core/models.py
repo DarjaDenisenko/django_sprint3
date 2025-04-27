@@ -1,5 +1,7 @@
 from django.db import models
 
+LENGTH = 256
+
 
 class BaseModel(models.Model):
     """Базовая модель."""
@@ -20,7 +22,7 @@ class BaseModel(models.Model):
 class BaseTitle(models.Model):
     """Базовая модель заголовка."""
 
-    title = models.CharField(max_length=256, verbose_name='Заголовок')
+    title = models.CharField(max_length=LENGTH, verbose_name='Заголовок')
 
     class Meta:
         abstract = True
