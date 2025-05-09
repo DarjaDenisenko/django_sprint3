@@ -1,6 +1,5 @@
 from django.db import models
-
-LENGTH = 256
+from blog.const import LENGTH
 
 
 class BaseModel(models.Model):
