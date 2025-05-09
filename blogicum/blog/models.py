@@ -2,9 +2,9 @@ from django.db import models
 from django.contrib.auth import get_user_model
 
 from core.models import BaseModel, BaseTitle
+from .const import LENGTH
 
 User = get_user_model()
-LENGTH = 256
 
 
 class Location(BaseModel):
