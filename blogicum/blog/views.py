@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 
 from core.query_sets import post_query, category_query
 
-LIMIT = 5
+from .const import LIMIT
 
 
 def index(request):
